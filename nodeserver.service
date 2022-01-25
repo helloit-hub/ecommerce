@@ -1,0 +1,12 @@
+[Unit]
+Description=Node.js Example Server 
+
+[Service]
+ExecStart=/index.js
+Restart=always
+RestartSec=5
+StansardOutput=syslog
+StansardError=syslog
+SyslogIdentifier=nodejs-Example
+[Install]
+WantedBy=multi-user.target
